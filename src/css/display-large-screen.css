@@ -1,0 +1,45 @@
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: var(--color-secondary);
+  border-bottom: 2px solid black;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header .container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.links {
+  align-self: center;
+}
+
+.linkedin_img {
+  padding-bottom: 6px;
+}
+
+.main {
+  display: flex;
+}
+
+.details {
+  margin-bottom: 0;
+  border: 1px solid var(--color-quinary);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--color-neutral-6);
+}

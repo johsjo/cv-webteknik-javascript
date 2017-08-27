@@ -1,0 +1,26 @@
+{
+  "name": "johsjo",
+  "version": "1.0.0",
+  "description": "cv",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "process-images": "cp -r src/img dist",
+    "process-css": "postcss -o dist/css/master.css src/css/master.css",
+    "process-html": "html-minifier --remove-comments --output-dir dist --input-dir src --file-ext html",
+    "css-lint": "node node_modules/stylelint/lib/cli.js 'src/css/**/*.css'",
+    "build": "npm run css-lint && npm run process-images && npm run process-css && npm run process-html"
+  },
+  "author": "Johan Sjölander",
+  "license": "ISC",
+  "dependencies": {
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0"
+  },
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0"
+  }
+}
