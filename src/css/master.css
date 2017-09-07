@@ -1,7 +1,6 @@
 @import "reset.css";
 @import "base.css";
-@import 'display-small-screen.css' screen /*and  (min-width: 605px)*/ and (max-width: 650px);
-@import 'display-medium-screen.css' screen and (min-width: 650px) and (max-width: 840px);
+@import 'display-small-screen.css' screen;
+@import 'display-medium-screen.css' screen and (min-width: 650px);
 @import 'display-large-screen.css' screen and (min-width: 840px);
-@import 'mobil-screen.css' screen and  (min-device-width:400px) and (max-device-width: 605px);
-@import 'mobil-small-screen.css' screen and  (max-device-width: 400px);
+@import 'mobil-small-screen.css' screen and  (max-device-width: 605px);

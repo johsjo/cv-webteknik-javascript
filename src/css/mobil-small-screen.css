@@ -14,30 +14,18 @@
 }
 
 .header .container {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-align: center;
   min-height: 100vh;
   margin: 0;
 }
 
 .header .container ul {
-  text-align: center;
   display: flex;
   flex-direction: column;
-}
-
-.links {
-  align-self: center;
-}
-
-.linkedin_img {
-  padding-bottom: 6px;
-}
-
-.aside {
-  display: flex;
+  text-align: center;
 }
 
 .details {
